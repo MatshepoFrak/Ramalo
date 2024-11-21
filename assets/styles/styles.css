@@ -1018,6 +1018,38 @@ body, html {
     gap: 2rem;
     margin-top: 2rem;
   }
+
+  .how-it-works-image {
+    display: none;
+  }
+
+  .how-it-works-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .how-it-works h2 {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .how-it-works p {
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .how-it-works-logo {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .how-it-works-content {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1064,5 +1096,102 @@ body, html {
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none!important;
+    }
+    
+    .partner-text {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .benefits-image img,
+    .partner-image img {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-ramalo-left p {
+        padding-left: 0;
+        text-align: left;
+        margin: 1rem 20px;
+    }
+
+    .logo-title {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .why-ramalo h2 {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none!important;
+    }
+}
+
+/* Default styles for larger screens */
+.fleet-text, .gray-text {
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.gray-text {
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .fleet-text, .gray-text {
+        text-align: left;
+        padding: 0 20px;
+        margin-bottom: 1rem;
+    }
+
+    .how-it-works-text {
+        width: 100%;
+    }
+
+    .how-it-works h2 {
+        margin-left: 20px;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sign-up-container {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 10px;
+    }
+
+    .sign-up-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-up-container h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 }
