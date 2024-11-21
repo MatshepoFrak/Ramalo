@@ -10,7 +10,7 @@ body, html {
 }
 
 .hero {
-    background-image: url('../RAMALO _AUGUST_SM/Ramalo\ Social\ Media_AUGUST12_Twitter.jpg');
+    background-image: url('../images/hero.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -657,12 +657,13 @@ body, html {
 }
 
 .logistics-section {
-    background-image: url('../images/pexels-rdne-7363094.jpg');
+    background-image: url('../images/your-go-to.png');
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;
     position: relative;
     color: var(--secondary-color);
+    height: 50vh; /* Increased height to 100% of the viewport height */
 }
 
 .logistics-section::before {
@@ -694,11 +695,13 @@ body, html {
     display: block;
     margin-bottom: 10px;
     margin-right: 50%;
+    margin-top: 80px; /* Increased margin-top to move it further down */
 }
 
 .logistics-content .line2 {
     display: block;
     margin-right: 60%;
+    margin-top: 60px; /* Increased margin-top to move it further down */
 }
 
 .logistics-section ul {
@@ -834,7 +837,7 @@ body, html {
 
 /* footer */
 .footer {
-    background-image: url('../images/pexels-aleksmagnusson-2962589.jpg');
+    background-image: url('../images/footer.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -842,15 +845,7 @@ body, html {
     position: relative;
 }
 
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 32, 0.8);
-}
+
 
 .footer-content {
     position: relative;
@@ -914,5 +909,160 @@ body, html {
     }
     60% {
         transform: translateY(-5px);
+    }
+}
+
+/* Add these media queries at the end of the file */
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    left: 10%;
+    width: 80%;
+  }
+
+  .why-ramalo-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-ramalo-left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .why-ramalo-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .service-icons {
+    gap: 1rem;
+  }
+
+  .get-involved {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .involvement-option {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .offer-grid1 {
+    grid-template-columns: 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .service-item {
+    width: 120px;
+  }
+
+  .service-item i {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .benefits-text {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .benefits-text p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .we-offer {
+    padding-left: 5%;
+  }
+
+  .partner-content {
+    flex-direction: column;
+  }
+
+  .partner-text {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .partner-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .service-icons {
+    justify-content: center;
+  }
+
+  .service-item {
+    width: 100px;
+  }
+
+  .why-ramalo-left p {
+    padding-left: 5%;
+  }
+
+  .logo-title {
+    padding-left: 5%;
+  }
+
+  .we-offer h3 {
+    padding-left: 5%;
+  }
+
+  .warehouse-content h2,
+  .logistics-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .benefits-image img {
+        display: none!important; /* This will hide the R image on screens smaller than 768px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partner-image img {
+        margin-top: 2rem; /* Adds space above the image on smaller screens */
+        width: 80%; /* Makes the image slightly smaller on mobile */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }

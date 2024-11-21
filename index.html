@@ -25,11 +25,17 @@
             <button class="cta-button">View More</button>
         </div>
         <div class="scroll-indicator">
-            <div class="scroll-icon">
+            <div class="scroll-icon" onclick="scrollToServices()">
                 <i class="fas fa-chevron-down"></i>
             </div>
             <span>Scroll down</span>
         </div>
+        <script>
+            function scrollToServices() {
+                const servicesSection = document.querySelector('.services');
+                servicesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
     </section>
 
     <section class="services">
@@ -63,14 +69,14 @@
         <h2>Get Involved:</h2>
         <div class="get-involved">
             <div class="involvement-option">
-                <img src="assets/RAMALO _AUGUST_SM/Ramalo Social Media_AUGUST40_FB.jpg" alt="Get Involved Image 1">
+                <img src="assets/images/collea.png" alt="Get Involved Image 1">
                 <h3>For Business</h3>
                 <a href="#" class="learn-more">Learn more</a>
             </div>
             <div class="involvement-option">
-                <img src="assets/RAMALO _AUGUST_SM/Ramalo Social Media_AUGUST7_FB.jpg" alt="Get Involved Image 2">
+                <img src="assets/images/driverimage.png" alt="Get Involved Image 2">
                 <h3>For Driver</h3>
-                <a href="#" class="learn-more">Learn more</a>
+                <a href="driver.html" class="learn-more">Learn more</a>
             </div>
         </div>
     </section>
@@ -327,7 +333,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>2020 Ramalo Logistics</p>
+            <p>2024 Ramalo Logistics</p>
         </div>
     </footer>
 
